@@ -7,9 +7,11 @@
 # require 'susy'
 
 # Change Compass configuration
-# compass_config do |config|
-#   config.output_style = :compact
-# end
+compass_config do |config|
+  # :style options include :nested, :expanded, :compact, and :compressed
+  config.output_style = :expanded
+  config.sass_options = { :line_comments => true, :debug_info => false }
+end
 
 ###
 # Page options, layouts, aliases and proxies
@@ -47,6 +49,15 @@
 #   end
 # end
 
+###
+# Ignore pages
+###
+
+ignore "/stylesheets/lib/public/*"
+ignore "/javascripts/lib/*"
+ignore "/partials/*"
+
+
 set :css_dir, 'stylesheets'
 
 set :js_dir, 'javascripts'
@@ -74,4 +85,11 @@ configure :build do
 
   # Or use a different image path
   # set :http_path, "/Content/images/"
+
+  compass_config do |config|
+    # :style options include :nested, :expanded, :compact, and :compressed
+    config.output_style = :nested
+    config.sass_options = { :line_comments => false, :debug_info => false }
+  end
+
 end
