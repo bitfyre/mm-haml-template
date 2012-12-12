@@ -1,0 +1,3 @@
+[submodule "source/stylesheets/lib/public/normalize"]
+	path = source/stylesheets/lib/public/normalize
+	url = git@github.com:bitfyre/normalize.scss.git
