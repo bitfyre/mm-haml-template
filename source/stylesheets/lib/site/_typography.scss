@@ -1,0 +1,16 @@
+/* --------------------------------------------------------------------------------------------- */
+/* Site:Typography */
+
+/* Because it's really all about the content. Nothing else matters.
+//   Not the drop shadows, not the gradients, not to use Gotham vs Proxima Nova
+//   None of that matters if the content is crap and unreadable 
+   It all starts here */
+/* --------------------------------------------------------------------------------------------- */
+
+body {
+  color: $font-color;
+  font-family: $font-family;
+  font-size: $font-size;
+  line-height: $line-height;
+  vertical-align: text-bottom;
+}
