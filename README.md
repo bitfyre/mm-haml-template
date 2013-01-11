@@ -1,2 +1,2 @@
-Middleman Bitfyre HAML Project Template
-=======================================
+Middleman HAML Template
+=======================
